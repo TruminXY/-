@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.2,user-scalable=no" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Count-Down Make XiangYixin</title>
+</head>
+
+<body>
+    <div class="minutes-set">
+        <button data-setter="minutes-plus">▲</button>
+        <br>
+        <button data-setter="minutes-minus">▼</button>
+    </div>
+    <div class="seconds-set">
+        <button data-setter="seconds-plus">▲</button>
+        <br>
+        <button data-setter="seconds-minus">▼</button>
+    </div>
+    <div class="controlls">
+        <div class="display-remain-time" id="display-remain-time">00:00</div>
+        <button class="play" id="pause"></button>
+    </div>
+    <div class="circle">
+        <svg width="540" viewBox="0 0 220 220">
+           <g transform="translate(110,110)">
+              <circle r="100" class="e-c-base" id="rgb-b"/>
+              <g transform="rotate(-90)">
+                 <circle r="100" class="e-c-progress" id="rgb-p"/>
+                 <g id="s-pointer">
+                    <circle cx="100" cy="0" r="3" class="s-c-pointer" id="rgb-s"/>
+                 </g>
+                 <g id="e-pointer">
+                    <circle cx="100" cy="0" r="3" class="e-c-pointer" id="rgb-e"/>
+                 </g>
+              </g>
+           </g>
+        </svg>
+    </div>
+    <a class="tips" href="tips.html">tips</a>
+    <script src="node.js" type="text/javascript"></script>
+</body>
+
+</html>
